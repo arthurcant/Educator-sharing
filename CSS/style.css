@@ -18,6 +18,9 @@ body { /*#3D7AFD #1B2431*/
     
     width: auto;
     min-height: 100vh;
+}
+
+#principal {
 
 }
 
@@ -212,3 +215,167 @@ body { /*#3D7AFD #1B2431*/
     animation-duration: 2s;
 }
 
+@media (min-width:344px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    #principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        display: block;
+        margin-left: 22rem;
+    }
+
+    #image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    #android {
+        width: 49rem;
+        margin-left: 23rem;
+    }
+    #fistH1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+        margin-left: 21rem;
+    }
+    .paragraphs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 35rem;
+        height: 76rem;
+        background-color: transparent;
+    }
+    #border {
+        display: block;
+        /* width: 58rem; */
+        animation-duration: 2s;
+        margin-left: 19rem;
+        visibility: visible;
+        opacity: 1;
+    }
+    #choose {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        width: 46rem;
+        height: 12rem;
+    }
+    #pop-up {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, .8);
+    }
+    #screem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 142vw;
+        height: 35vh;
+        background-color: #fff;
+        margin-left: 2rem;
+    }
+    #screem img {
+        position: relative;
+        top: -4.5rem;
+        right: -22rem;
+        width: 5vw;
+    }
+
+    #message-hidden {
+        display: none;
+        justify-content: center;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 4rem;
+        animation-duration: 2s;
+        width: 100vw;
+        margin-left: 18rem;
+    }
+
+
+
+}
+@media (min-width:480px)  { /*  smartphones, Android phones, landscape iPhone  */
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding-bottom: 30rem;
+        width: auto;
+        min-height: 100vh;
+    }
+    .paragraphs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 35rem;
+        height: 76rem;
+        background-color: transparent;
+    }
+
+}
+ 
+
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+
+    html {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20rem;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding-bottom: 30rem;
+        width: 43rem;
+        min-height: 100vh;
+    }
+
+    .paragraphs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 60rem;
+        height: 76rem;
+        background-color: transparent;
+    }
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

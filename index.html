@@ -18,12 +18,27 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/normalize.css">
 
+    <!-- Liberties -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
     <title>Educator sharing</title>
 </head>
 
 <body>
+
+    <div id="pop-up">
+
+        <div id="screem">
+            <img src="images/simbolo-x.png" alt="Imagem de um x" onclick="exit()">
+            <b>Se gostou da ideia doer para:</b>
+            <div id="details-donate"> 
+                <span id="pix">Pix:</span> <span id="number">xxx.xxx.xxx.xx</span> 
+            </div>
+        </div>
+
+    </div>
+
     <div>
         <div class="your-element" data-tilt>
             <div id="image">
@@ -88,7 +103,7 @@
                 </p>
             </div>
         </main>
-        <div id="border">
+        <div id="border" class="animation">
             <div>
                 <div class="arrow-left">
                     <div>
@@ -105,16 +120,11 @@
             <div id="choose">
                 <span>Você gostou da ideia ?</span>
                 
-                <div id="area-buttons">
-                    <input type="button" class="btn" value="Sim">
-                    <input type="button" class="btn" value="Não">
+                <div id="area-buttons"> <!-- animate__shakeX-->
+                    <input type="button" id="btn-yes" class="btn" onclick="exit()" value="Sim">
+                    <input type="button" id="btn-no" class="btn" onclick="minMain()" value="Não">
                 </div>
             </div>
-
-
-
-
-
 
             <div class="arrow-right">
                 <div class="arrow-left">
@@ -130,14 +140,17 @@
                 </div>
             </div>
             
-
+        </div>
+        <div id="message-hidden">
+            Obrigado pelo seu feedback!
         </div>
     </div>
 
     
 
-    <script src="interact.js"></script>
-    <script type="text/javascript" src="vanilla-tilt.babel.min.js"></script>
+    <script src="javascript/interact.js"></script>
+    <script type="text/javascript" src="javascript/vanilla-tilt.babel.min.js"></script>
+
 </body>
 
 </html>

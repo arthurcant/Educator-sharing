@@ -34,9 +34,6 @@ body { /*#3D7AFD #1B2431*/
     width: 50rem;
 }
 
-
-
-
 .paragraphs {
     flex-wrap: wrap;
     width: 80rem;
@@ -64,7 +61,9 @@ body { /*#3D7AFD #1B2431*/
 }
 
 #border {
-    /* border: 1rem solid black; */
+    display: block;
+
+    animation-duration: 2s;
 }
 
 #choose {
@@ -82,7 +81,6 @@ body { /*#3D7AFD #1B2431*/
 #choose span{
     font-size: 4rem;
     font-family: 'Abril Fatface', cursive;
-
 }
 
 #area-buttons {
@@ -98,6 +96,20 @@ body { /*#3D7AFD #1B2431*/
 .arrow-left {
     display: flex;
     justify-content: space-between;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+#btn-yes {
+    background-color: green;
+    color: #fff;
+}
+
+#btn-no {
+    background-color: red;
+    color: #fff;
 }
 
 .bar {
@@ -136,10 +148,67 @@ body { /*#3D7AFD #1B2431*/
     transform: rotate(-90deg);
 }
 
+#pop-up {
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0;right: 0;
 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 100vh ;
+    
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .8);
+}
 
+#screem { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    width: 35vw;
+    height: 35vh;
+    background-color: #fff;
+}
 
+#screem b {
+    font-size: 2rem;
+}
 
+#details-donate {
+    font-size: 1.9rem;
+}
 
+#pix {
+    font-family: 'Abril Fatface', cursive;
+}
+
+#number {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#exit {
+    position: relative;
+    top: 10rem;
+    font-size: 3rem;
+}
+
+#screem img {
+    position: relative;
+    top: -79px;
+    right: -21.9rem;
+    width: 1vw;
+}
+
+#message-hidden {
+    display: none;
+    justify-content: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4rem;
+    animation-duration: 2s;
+}
 

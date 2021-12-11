@@ -13,7 +13,7 @@ function exit() {
 
 function minMain (){
     answerNo();
-   setTimeout(show, 4000);
+   setTimeout(show, 2000);
 }
 
 function answerNo(){

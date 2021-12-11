@@ -21,7 +21,9 @@ body { /*#3D7AFD #1B2431*/
 }
 
 #principal {
-
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #image {
@@ -214,6 +216,8 @@ body { /*#3D7AFD #1B2431*/
     font-size: 4rem;
     animation-duration: 2s;
 }
+/* 
+ */
 /* (min-width:344px) */
 @media screen and (min-width:244px) and (max-width:480px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
     #principal {
@@ -339,10 +343,22 @@ body { /*#3D7AFD #1B2431*/
         align-items: center;
         background-color: #fff;
         padding-bottom: 30rem;
-        width: auto;
+        width: 100vw;
         min-height: 100vh;
     }
+    
     .paragraphs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: 8rem;
+        width: 33rem;
+        height: 76rem;
+        background-color: transparent;
+    }
+    /* .paragraphs {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -351,21 +367,22 @@ body { /*#3D7AFD #1B2431*/
         width: 35rem;
         height: 76rem;
         background-color: transparent;
-    }
+    } */
 
     #principal {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         width: 100vw;
     }
 
     main {
         display: flex;
         flex-direction: column;
-        display: block;
-        margin-left: 22rem;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 0rem;
     }
 
     #image {
@@ -385,15 +402,33 @@ body { /*#3D7AFD #1B2431*/
         margin: 0.67em 0;
         margin-left: 21rem;
     }
-    
     #border {
         display: block;
         /* width: 58rem; */
         animation-duration: 2s;
-        margin-left: 19rem;
+        margin-left: 20rem;
+        margin-right: 4rem;
         visibility: visible;
         opacity: 1;
     }
+    /*     
+    #border {
+        display: block;
+        animation-duration: 2s;
+        margin-left: 19rem;
+        visibility: visible;
+        opacity: 1;
+    } */
+    #choose {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        width: 41rem;
+        height: 12rem;
+    }
+    /*     
     #choose {
         display: flex;
         flex-direction: column;
@@ -402,7 +437,7 @@ body { /*#3D7AFD #1B2431*/
         padding: 2rem;
         width: 46rem;
         height: 12rem;
-    }
+    } */
     #pop-up {
         position: fixed;
         top: 0;
@@ -444,11 +479,15 @@ body { /*#3D7AFD #1B2431*/
         margin-left: 18rem;
     }
 
+    div#x {
+        margin-top: -17rem;
+    }
+    
 }
  
 
 @media screen and (min-width:600px) and (max-width:801px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-
+    
     html {
         display: flex;
         flex-direction: column;
@@ -466,7 +505,7 @@ body { /*#3D7AFD #1B2431*/
         width: 43rem;
         min-height: 100vh;
     }
-
+    
     .paragraphs {
         display: flex;
         flex-direction: column;
@@ -477,7 +516,7 @@ body { /*#3D7AFD #1B2431*/
         height: 76rem;
         background-color: transparent;
     } */
-
+    
     body {
         display: flex;
         flex-direction: column;
@@ -506,14 +545,14 @@ body { /*#3D7AFD #1B2431*/
         align-items: center;
         width: 100vw;
     }
-
+    
     main {
         display: flex;
         flex-direction: column;
         display: block;
         margin-left: 22rem;
     }
-
+    
     #image {
         display: flex;
         flex-direction: column;
@@ -589,5 +628,24 @@ body { /*#3D7AFD #1B2431*/
         width: 100vw;
         margin-left: 18rem;
     }
+    
+    div#x {
+        margin-top: -17rem;
+    }
+}
 
+
+@media screen and (min-width:801px) and (max-width:861px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .paragraphs {
+        flex-wrap: wrap;
+        width: 72rem;
+        height: 37rem;
+        background-color: transparent;
+    }
+
+    #principal {
+        display: flex;
+        flex-direction: column;
+        margin-left: 11rem;
+    }
 }

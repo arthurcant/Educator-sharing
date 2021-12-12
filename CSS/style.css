@@ -169,25 +169,6 @@ body { /*#3D7AFD #1B2431*/
     background-color: rgba(0, 0, 0, .8);
 }
 
-#screem { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 35vw;
-    height: 35vh;
-    background-color: #fff;
-}
-
-#screem b {
-    font-size: 2rem;
-}
-
-#details-donate {
-    font-size: 1.9rem;
-}
-
 #pix {
     font-family: 'Abril Fatface', cursive;
 }
@@ -196,19 +177,38 @@ body { /*#3D7AFD #1B2431*/
     font-family: 'Cormorant Garamond', serif;
 }
 
-#exit {
-    position: relative;
-    top: 10rem;
-    font-size: 3rem;
+#screem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+    height: 35vh;
+    background-color: #fff;
 }
 
 #screem img {
-    position: relative;
-    top: -79px;
-    right: -21.9rem;
+    align-self: flex-end;
+    margin-top: 1rem;
+    margin-right: 1rem;
     width: 1vw;
 }
 
+#area-details {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 7rem;
+}
+
+
+#screem b {
+    font-size: 2rem;
+}
+
+#details-donate {
+    font-size: 1.9rem;
+}
 #message-hidden {
     display: none;
     justify-content: center;
@@ -299,29 +299,47 @@ body { /*#3D7AFD #1B2431*/
         left: 0;
         right: 0;
         display: none;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         width: 100%;
         min-height: 100vh;
         z-index: 99;
         background-color: rgba(0, 0, 0, .8);
     }
+    
     #screem {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 92vw;
+        width: 55vw;
         height: 35vh;
         background-color: #fff;
-        margin-left: 2rem;
     }
+
     #screem img {
-        position: relative;
-        top: -4.5rem;
-        right: -14rem;
-        width: 4vw;
+        align-self: flex-end;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        width: 2vw;
     }
+
+    #area-details {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        margin-top: 7rem;
+    }
+
+
+    #screem b {
+        font-size: 1rem;
+    }
+
+    #details-donate {
+        font-size: 1rem;
+    }
+
     #message-hidden {
         display: none;
         justify-content: center;
@@ -331,7 +349,9 @@ body { /*#3D7AFD #1B2431*/
         width: 100vw;
         margin-left: 2rem;
     }
-
+    div#adjust {
+        margin-top: -17rem;
+    }
 
 
 }
@@ -445,28 +465,44 @@ body { /*#3D7AFD #1B2431*/
         left: 0;
         right: 0;
         display: none;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         width: 100%;
         min-height: 100vh;
         z-index: 99;
         background-color: rgba(0, 0, 0, .8);
     }
+    
     #screem {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 96vw;
+        width: 55vw;
         height: 35vh;
         background-color: #fff;
-        margin-left: 9rem;
     }
+
     #screem img {
-        position: relative;
-        top: -4.5rem;
-        right: -22rem;
-        width: 5vw;
+        align-self: flex-end;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        width: 2vw;
+    }
+
+    #area-details {    
+        margin-top: 7rem;
+    }
+
+    #screem b {
+        font-size: 1.5rem;
+    }
+
+    #area-details {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        margin-top: 7rem;
     }
 
     #message-hidden {
@@ -479,7 +515,7 @@ body { /*#3D7AFD #1B2431*/
         margin-left: 18rem;
     }
 
-    div#x {
+    div#adjust {
         margin-top: -17rem;
     }
     
@@ -595,28 +631,44 @@ body { /*#3D7AFD #1B2431*/
         left: 0;
         right: 0;
         display: none;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         width: 100%;
         min-height: 100vh;
         z-index: 99;
         background-color: rgba(0, 0, 0, .8);
     }
+    
     #screem {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 92vw;
+        width: 55vw;
         height: 35vh;
         background-color: #fff;
-        margin-left: 2rem;
     }
+
     #screem img {
-        position: relative;
-        top: -4.5rem;
-        right: -25rem;
-        width: 4vw;
+        align-self: flex-end;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        width: 2vw;
+    }
+
+    #area-details {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        margin-top: 7rem;
+    }
+
+    #screem b {
+        font-size: 2rem;
+    }
+
+    #details-donate {
+        font-size: 2rem;
     }
 
     #message-hidden {
@@ -629,7 +681,7 @@ body { /*#3D7AFD #1B2431*/
         margin-left: 18rem;
     }
     
-    div#x {
+    div#adjust {
         margin-top: -17rem;
     }
 }
@@ -647,5 +699,52 @@ body { /*#3D7AFD #1B2431*/
         display: flex;
         flex-direction: column;
         margin-left: 11rem;
+    }
+
+    #pop-up {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, .8);
+    }
+    
+    #screem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55vw;
+        height: 35vh;
+        background-color: #fff;
+    }
+
+    #screem img {
+        align-self: flex-end;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        width: 2vw;
+    }
+
+    #area-details {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        margin-top: 7rem;
+    }
+
+    #screem b {
+        font-size: 2rem;
+    }
+
+    #details-donate {
+        font-size: 2rem;
     }
 }

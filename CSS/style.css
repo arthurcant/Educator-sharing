@@ -311,8 +311,8 @@ body { /*#3D7AFD #1B2431*/
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 55vw;
-        height: 35vh;
+        width: 69vw;
+        height: 32vh;
         background-color: #fff;
     }
 
@@ -328,16 +328,16 @@ body { /*#3D7AFD #1B2431*/
         flex-direction: column;
         justify-content: center;
         align-items: center;  
-        margin-top: 7rem;
+        margin-top: 6rem;
     }
 
 
     #screem b {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #details-donate {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #message-hidden {
@@ -490,7 +490,7 @@ body { /*#3D7AFD #1B2431*/
     }
 
     #area-details {    
-        margin-top: 7rem;
+        margin-top: 6rem;
     }
 
     #screem b {
@@ -660,7 +660,7 @@ body { /*#3D7AFD #1B2431*/
         flex-direction: column;
         justify-content: center;
         align-items: center;  
-        margin-top: 7rem;
+        margin-top: 6rem;
     }
 
     #screem b {
@@ -737,7 +737,7 @@ body { /*#3D7AFD #1B2431*/
         flex-direction: column;
         justify-content: center;
         align-items: center;  
-        margin-top: 7rem;
+        margin-top: 4rem;
     }
 
     #screem b {
